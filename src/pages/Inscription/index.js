@@ -1,2 +1,2 @@
-import Inscription from './inscription';
+import Inscription from './Inscription';
 export default Inscription;

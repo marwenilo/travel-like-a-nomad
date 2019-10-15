@@ -9,7 +9,7 @@ const Login = () => (
     <div className="title-container">
       <h1 className="title">Connect</h1>
       <h2 className="sub-title">
-        Already have a <span className="right">RightJob</span> account?{" "}
+        Already have an account?{" "}
         <Link to="/inscription">Sign in</Link>
       </h2>
     </div>

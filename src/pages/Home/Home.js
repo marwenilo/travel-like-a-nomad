@@ -1,7 +1,7 @@
 import React from 'react';
 // import './Home.css';
 
-const Admin = () => (
+const Home = () => (
 
 <div>
       <h1 className="title">Create your Account</h1>
@@ -44,4 +44,4 @@ const Admin = () => (
     </div>
   
 );
-export default Admin;
+export default Home;
