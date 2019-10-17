@@ -2,19 +2,20 @@ import React from 'react';
 import NavBar from '../Home/NavBar';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-
+import SidBar from '../../components/SideBar';
 import PostCard from './components/PostCard';
+
 import "./Post.css";
 
 
-const useStyles = makeStyles(theme => ({
+const usesStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
   },
 
 }));
-const RecipeReviewCard = () => {
-  const classes = useStyles();
+const postCard = () => {
+  const classes = usesStyles();
   return (
     <div className={classes.root} >
       <Grid container spacing={6}>
@@ -22,10 +23,10 @@ const RecipeReviewCard = () => {
       <NavBar /> 
       </Grid>
       <Grid item xs={3}>
-      <PostCard / >
+      <SidBar />
       </Grid>
       <Grid item xs={8}>
-      <PostCard / >
+      <PostCard />
       </Grid>
      
       </Grid>
@@ -33,4 +34,4 @@ const RecipeReviewCard = () => {
   )
 }
 
-export default RecipeReviewCard
+export default postCard
