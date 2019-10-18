@@ -12,7 +12,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 
 
-const drawerWidth = 220;
+const drawerWidth = 200;
 
 
 const useStyles = makeStyles(theme => ({
@@ -21,6 +21,7 @@ const useStyles = makeStyles(theme => ({
   },
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
+    background: '#037367',
   },
   drawer: {
       
@@ -31,7 +32,7 @@ const useStyles = makeStyles(theme => ({
     width: drawerWidth,
   },
   list:{
-    background: '#7BD4CC',
+    background: '#037367',
   },
   toolbar: theme.mixins.toolbar,
   content: {
@@ -60,7 +61,7 @@ const SideBar = () => {
         //   anchor="left"
         >
             <div  className={classes.toolbar}/>
-          <Divider />
+          
           <List className={classes.list}>
             {['Hot', 'Trending'].map((text, index) => (
               <ListItem button key={text}>
