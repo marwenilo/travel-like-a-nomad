@@ -17,7 +17,7 @@ const Home = () => (
 
       <div className="bodySlider"> 
       <div>
-      <i class="fas fa-globe-asia"></i>
+      <FontAwesomeIcon icon="check-square" />
       <p className="title3"> Discover the world </p>
           </div> 
       <div> <p className="title3"> Share a wealth of experience </p></div> 
