@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.image-flag{
+  height: 30px;
+  width: 30px;
+}
+.aaa{
+  background-color: blue !important;
+}
