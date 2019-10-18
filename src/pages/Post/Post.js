@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBar from '../Home/NavBar';
+import NavBar from '../Home/components/NavBar';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import SidBar from '../../components/SideBar';
