@@ -10,15 +10,21 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
   card: {
-    maxWidth: 345,
+    maxWidth: 545,
+    marginTop:50,
+    marginLeft:20
+    
   },
+  article:{
+      display:"flex"
+  }
 });
 export default function Article() {
     const classes = useStyles();
   
     return (
       <Card className={classes.card}>
-        <CardActionArea>
+        <CardActionArea className={classes.article} >
           <CardMedia
             component="img"
             alt="Contemplative Reptile"
@@ -28,22 +34,15 @@ export default function Article() {
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
-              Lizard
+              Title articel
             </Typography>
-            <Typography variant="body2" color="textSecondary" component="p">
-              Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-              across all continents except Antarctica
-            </Typography>
+            
           </CardContent>
         </CardActionArea>
-        <CardActions>
-          <Button size="small" color="primary">
-            Share
-          </Button>
-          <Button size="small" color="primary">
-            Learn More
-          </Button>
-        </CardActions>
+        <Typography variant="body2" color="textSecondary" component="p">
+              Lien article
+            </Typography>
+       
       </Card>
     );
   }

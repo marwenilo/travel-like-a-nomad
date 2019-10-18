@@ -10,14 +10,16 @@ import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-
-
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
+import Fab from '@material-ui/core/Fab';
+import NavBarUser from '../components/NavBarUser'
 const drawerWidth = 200;
-
 
 const useStyles = makeStyles(theme => ({
   root: {
     display: 'flex',
+    
   },
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
@@ -27,38 +29,40 @@ const useStyles = makeStyles(theme => ({
       
     width: drawerWidth,
     flexShrink: 0,
+    
   },
   drawerPaper: {
     width: drawerWidth,
   },
   list:{
     background: '#037367',
+    color:"#FFF"
   },
   toolbar: theme.mixins.toolbar,
   content: {
     flexGrow: 1,
-    padding: theme.spacing(3),
+    padding: theme.spacing(9),
   },
 }));
 const SideBar = () => {
     const classes = useStyles();
     return (
+        <div className="containerr">
+            
         <div className={classes.root}>
         <CssBaseline />
         <AppBar position="fixed" className={classes.appBar}>
-        <Toolbar>
-          <Typography variant="h6" noWrap>
-            Clipped drawer
-          </Typography>
-        </Toolbar>
-      </AppBar>
+        
+         <NavBarUser />
+      </AppBar> 
+      
         <Drawer 
           className={classes.drawer}
           variant="permanent"
           classes={{
             paper: classes.drawerPaper,
           }}
-        //   anchor="left"
+          anchor="left"
         >
             <div  className={classes.toolbar}/>
           
@@ -73,8 +77,8 @@ const SideBar = () => {
           <Divider />
           <List className={classes.list}>
             {[' Allemagne', ' Argentine', 'Australie','Autriche', ' Belgique', 'Brésil','Canada', 'Chili', ' Chine','Colombie', 'Corée du Sud', 'Costa Rica','Côte d’Ivoire', 'Croatie', 'Danemark','Égypte','Espagne','États-Unis','France','Gabon','Grèce'].map((text, index) => (
-              <ListItem button key={text}>
-                <ListItemIcon>{index % 2 === 0 ? <img className="image-flag" src="https://static.thenounproject.com/png/1526-200.png" /> : <img className="image-flag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/White_flag_icon.svg/250px-White_flag_icon.svg.png" />}</ListItemIcon>
+              <ListItem  button key={text}>
+                <ListItemIcon>{text && <img className="image-flag" src="https://image.flaticon.com/icons/png/512/44/44942.png" />}</ListItemIcon>
                 <ListItemText primary={text} />
               </ListItem>
             ))}
@@ -84,6 +88,7 @@ const SideBar = () => {
           <div className={classes.toolbar} />
                 
         </main>
+      </div>
       </div>
     )
 }
