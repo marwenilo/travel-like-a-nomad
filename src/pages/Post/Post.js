@@ -23,8 +23,6 @@ const postCard = () => {
       <NavBar /> 
       </Grid>
       <Grid item xs={3}>
-
-      <PostCard />
       <SidBar />
       </Grid>
       <Grid item xs={8}>
