@@ -22,10 +22,10 @@ const RecipeReviewCard = () => {
       <NavBar /> 
       </Grid>
       <Grid item xs={3}>
-      <PostCard / >
+      <PostCard />
       </Grid>
       <Grid item xs={8}>
-      <PostCard / >
+      <PostCard />
       </Grid>
      
       </Grid>

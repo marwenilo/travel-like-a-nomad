@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './pages/Home';
 
 import Post from './pages/Post';
-import Posts from './pages/Posts';
 import Profile from './pages/Profile';
 import Admin from './pages/Admin';
 import Posts from './pages/Posts';
