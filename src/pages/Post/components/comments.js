@@ -1,14 +1,24 @@
 import React, { Fragment } from 'react';
 import CardHeader from '@material-ui/core/CardHeader';
-import { makeStyles } from '@material-ui/core/styles';
+
 import { red } from '@material-ui/core/colors';
 import TextField from '@material-ui/core/TextField';
 import Card from '@material-ui/core/Card';
 import Avatar from '@material-ui/core/Avatar';
+import subBtn from './subBtn';
+import FloatingActionButtons from './subBtn';
+
 import '../Post.css';
 
-const tasks = [{}];
-
+const tasks = [];
+// const useStyles = makeStyles(theme => ({
+//   margin: {
+//     margin: theme.spacing(1),
+//   },
+//   extendedIcon: {
+//     marginRight: theme.spacing(1),
+//   },
+// }));
 class Comments extends React.Component {
   state = {
     tasks,
@@ -41,16 +51,7 @@ class Comments extends React.Component {
       tasks: this.state.tasks.filter((el, index) => index !== i)
     });
   };
-  completeTask = i => {
-    this.setState({
-      tasks: this.state.tasks.map((el, index) => {
-        if (index === i) {
-          el.completed = !el.completed;
-          return el;
-        } else return el;
-      })
-    });
-  };
+
   editTask = i => {
     this.setState({
       tasks: this.state.tasks.map((el, index) => {
@@ -71,6 +72,7 @@ class Comments extends React.Component {
       <Fragment >
         
         <Card >
+          <h3 class="bg-primaryt p">Leave A Comment</h3>
      <div className ='commentContainer'>
      <CardHeader
         avatar={
@@ -90,10 +92,20 @@ class Comments extends React.Component {
         multiline
         rowsMax="4"
       />
+      {/* <span>
+      <FloatingActionButtons 
+      
+      aria-label="add" 
+    
+      onClick={() => this.handleClick(this.state.newTask)}
+          
+        />
+      </span> */}
       <input
+      className="submitComment"
             type="button"
-            value="Post"
-            className="add-button"
+            value="submit"
+            className="add-button "
             onClick={() => this.handleClick(this.state.newTask)}
           />
       </div>
@@ -101,15 +113,14 @@ class Comments extends React.Component {
         
           
         </Card>
-        <Card>
-        <section className="display-tasks">
+        <Card className="comments-section">
+        {/* <section className="display-tasks"> */}
           
           
           <ul className="tasks-list">
             {this.state.tasks.map((el, i) =>
               el.edit ? (
                 <Fragment key={i}>
-                 
                   <input
                     type="text"
                     name='edit'
@@ -118,18 +129,18 @@ class Comments extends React.Component {
                   />
                 </Fragment>
               ) : (
-                <li key={i}>
+                <li key={i} className ='commentx'>
                   
                   <input
                     type="button"
                     value="Delete"
-                    className="task-button"
+                    className="task-button deletet"
                     onClick={() => this.deleteTask(i)}
                   />
                   <input
                     type="button"
                     value="Edit"
-                    className="task-button"
+                    className="task-button editet"
                     onClick={() => {
                       this.state.edition && this.editTask(i);
                       this.setState({
@@ -145,7 +156,7 @@ class Comments extends React.Component {
             )}
           </ul>
           
-        </section>
+        {/* </section> */}
 
         </Card>
       </Fragment>
