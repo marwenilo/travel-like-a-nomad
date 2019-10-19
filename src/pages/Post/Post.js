@@ -18,14 +18,14 @@ const postCard = () => {
   const classes = usesStyles();
   return (
     <div className={classes.root} >
-      <Grid container spacing={6}>
+      <Grid container spacing={4}>
         <Grid item xs={12}>
       <NavBar /> 
       </Grid>
       <Grid item xs={3}>
       <SidBar />
       </Grid>
-      <Grid item xs={8}>
+      <Grid item xs={7}>
       <PostCard />
       </Grid>
      

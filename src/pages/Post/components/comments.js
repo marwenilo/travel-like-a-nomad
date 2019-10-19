@@ -1,13 +1,9 @@
 import React, { Fragment } from 'react';
 import CardHeader from '@material-ui/core/CardHeader';
-
 import { red } from '@material-ui/core/colors';
 import TextField from '@material-ui/core/TextField';
 import Card from '@material-ui/core/Card';
 import Avatar from '@material-ui/core/Avatar';
-import subBtn from './subBtn';
-import FloatingActionButtons from './subBtn';
-
 import '../Post.css';
 
 const tasks = [];
@@ -71,7 +67,7 @@ class Comments extends React.Component {
     return (
       <Fragment >
         
-        <Card >
+        <Card className="ombres_multiples_diffuses" >
           <h3 class="bg-primaryt p">Leave A Comment</h3>
      <div className ='commentContainer'>
      <CardHeader
@@ -105,7 +101,7 @@ class Comments extends React.Component {
       className="submitComment"
             type="button"
             value="submit"
-            className="add-button "
+            className="add-button"
             onClick={() => this.handleClick(this.state.newTask)}
           />
       </div>

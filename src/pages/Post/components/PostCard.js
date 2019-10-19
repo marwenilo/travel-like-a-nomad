@@ -63,7 +63,7 @@ const RecipeReviewCard = () => {
 
     <div className='cardsContainer'>
 
-    <Card className={classes.card}>
+    <Card className='${classes.card} ombres_multiples_diffuses'>
       <CardHeader
         avatar={
           <Avatar aria-label="recipe" className={classes.avatar}>
