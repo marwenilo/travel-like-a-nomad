@@ -11,10 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-.image-flag{
-  height: 30px;
-  width: 30px;
+.MuiBadge-root {
+  display: inline-flex;
+  position: relative;
+  flex-shrink: 0;
+  vertical-align: middle;
+  padding-right: 20px;
+  padding-left: 20px;
 }
-.aaa{
-  background-color: blue !important;
+.MuiIconButton-colorInherit {
+  color: inherit;
+  padding-top: 4px ;
+
 }

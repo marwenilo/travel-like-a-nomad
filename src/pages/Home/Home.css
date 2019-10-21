@@ -47,7 +47,7 @@
     
     .slideContainer {
         overflow: hidden;
-        max-height: 80vh;
+        max-height: 93vh;
     }
     
     .slideContainer figure img {
@@ -63,7 +63,7 @@
         text-align: left;
         font-size: 0;
         animation: 15s slider infinite; 
-        max-height:100vh;
+        /* max-height:100vh; */
     
     }
     .slideContainer{
@@ -136,7 +136,8 @@
     line-height: 28px;
     letter-spacing: -0.2px;
     font-weight: bold;
-    color: #00281f
+    color: #00281f;
+   
 }
 .bodySlider{
     display: flex;
@@ -149,6 +150,8 @@
 .fas{
     color: red !important;
 }
+
+
 
 
   

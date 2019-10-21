@@ -17,18 +17,15 @@ import clsx from 'clsx';
 import TextField from '@material-ui/core/TextField';
 import '../Post.css';
 
-
-
-
-
-
-
-
-
 const useStyles = makeStyles(theme => ({
   card: {
     maxWidth: 500,
+
+    marginTop:50,
+    alignItems:'center'
+
     
+
   },
   media: {
     height: 0,
@@ -51,6 +48,7 @@ const useStyles = makeStyles(theme => ({
 
 const RecipeReviewCard = () => {
   const classes = useStyles();
+
   const [expanded, setExpanded,values, setValues] = React.useState(false);
   const handleChange = name => event => {
     setValues({ ...values, [name]: event.target.value });
@@ -62,8 +60,10 @@ const RecipeReviewCard = () => {
 
   return (
     
+
     <div className='cardsContainer'>
-    <Card className={classes.card}>
+
+    <Card className='${classes.card} ombres_multiples_diffuses'>
       <CardHeader
         avatar={
           <Avatar aria-label="recipe" className={classes.avatar}>
@@ -88,27 +88,24 @@ const RecipeReviewCard = () => {
           experience mta3 el user tet7at houni !! win bech ye7ki 3al exp mte3ou ama nrmlmnt nlimitwi fel input 9deh men 7arf
         </Typography>
       </CardContent>
-      <CardActions disableSpacing >
+
+      <CardActions disableSpacing>
         <IconButton aria-label="add to favorites">
           <FavoriteIcon />
-       
-       
-       
-       
-       
         </IconButton>
         <IconButton aria-label="share">
           <ShareIcon />
-        </IconButton>       
+        </IconButton>
       </CardActions>
-      
     
     </Card>
+
     
      <div className='justDiv'></div>
      
      <Comments />
      </div>
+
   );
 };
 export default RecipeReviewCard

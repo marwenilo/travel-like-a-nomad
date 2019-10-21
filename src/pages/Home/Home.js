@@ -1,12 +1,8 @@
 import React from 'react';
-// import './Home.css';
+import './Home.css';
 import NavBar from './components/NavBar'
 import ImageSlider from './components/ImageSlider'
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faIgloo } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faIgloo)
 
 const Home = () => (
 
@@ -16,8 +12,7 @@ const Home = () => (
       <p className="title2">What makes us different </p>
 
       <div className="bodySlider"> 
-      <div>
-      <FontAwesomeIcon icon="check-square" />
+      <div className="ff">
       <p className="title3"> Discover the world </p>
           </div> 
       <div> <p className="title3"> Share a wealth of experience </p></div> 
