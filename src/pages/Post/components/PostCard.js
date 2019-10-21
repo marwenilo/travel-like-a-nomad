@@ -63,11 +63,7 @@ const RecipeReviewCard = () => {
 
     <div className='cardsContainer'>
 
-<<<<<<< HEAD
-    <Card className={classes.card}>
-=======
     <Card className='${classes.card} ombres_multiples_diffuses'>
->>>>>>> master
       <CardHeader
         avatar={
           <Avatar aria-label="recipe" className={classes.avatar}>
@@ -101,11 +97,7 @@ const RecipeReviewCard = () => {
           <ShareIcon />
         </IconButton>
       </CardActions>
-<<<<<<< HEAD
-     
-=======
     
->>>>>>> master
     </Card>
 
     

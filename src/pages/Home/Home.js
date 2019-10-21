@@ -3,17 +3,14 @@ import './Home.css';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer'
 import ImageSlider from './components/ImageSlider'
-<<<<<<< HEAD
 import IconButton from '@material-ui/core/IconButton';
 import PublicIcon from '@material-ui/icons/Public';
 import ShareIcon from '@material-ui/icons/Share';
 import FlightTakeoffIcon from '@material-ui/icons/FlightTakeoff';
-// import Button from '@material-ui/core/Button';
+
 import Fab from '@material-ui/core/Fab';
 import {travel} from '../Home/DataImg'
 
-=======
->>>>>>> master
 
 
 const Home = () => (
@@ -24,14 +21,10 @@ const Home = () => (
       <p className="title2">What makes us different </p>
 
       <div className="bodySlider"> 
-<<<<<<< HEAD
       <div>
       <IconButton style={{ marginBottom:"50px"}}>
       <PublicIcon style ={{width:"60px", height:"60px", color: "#00281f"}}/>
       </IconButton>
-=======
-      <div className="ff">
->>>>>>> master
       <p className="title3"> Discover the world </p>
           </div> 
 

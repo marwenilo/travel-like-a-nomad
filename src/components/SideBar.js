@@ -10,18 +10,11 @@ import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-<<<<<<< HEAD
-
-
-const drawerWidth = 220;
-
-=======
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import Fab from '@material-ui/core/Fab';
 import NavBarUser from '../components/NavBarUser'
 const drawerWidth = 200;
->>>>>>> master
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -32,12 +25,6 @@ const useStyles = makeStyles(theme => ({
     zIndex: theme.zIndex.drawer + 1,
     background: '#037367',
   },
-<<<<<<< HEAD
-  appBar: {
-    zIndex: theme.zIndex.drawer + 1,
-  },
-=======
->>>>>>> master
   drawer: {
       
     width: drawerWidth,
@@ -65,19 +52,10 @@ const SideBar = () => {
         <div className={classes.root}>
         <CssBaseline />
         <AppBar position="fixed" className={classes.appBar}>
-<<<<<<< HEAD
-        <Toolbar>
-          <Typography variant="h6" noWrap>
-            Clipped drawer
-          </Typography>
-        </Toolbar>
-      </AppBar>
-=======
         
          <NavBarUser />
       </AppBar> 
       
->>>>>>> master
         <Drawer 
           className={classes.drawer}
           variant="permanent"
@@ -87,11 +65,7 @@ const SideBar = () => {
         //   anchor="left"
         >
             <div  className={classes.toolbar}/>
-<<<<<<< HEAD
-          <Divider />
-=======
           
->>>>>>> master
           <List className={classes.list}>
             {['Hot', 'Trending'].map((text, index) => (
               <ListItem button key={text}>

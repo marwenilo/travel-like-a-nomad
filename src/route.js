@@ -15,12 +15,8 @@ function Routee() {
         <Router>
           <Switch>
 
-<<<<<<< HEAD
-            <Route exact path="/Home" component={Home} />
-=======
             <Route exact path="/" component={Home} />
 
->>>>>>> master
             <Route exact path="/posts" component={Posts} />
             <Route exact path="/post" component={Post} />
             <Route exact path="/profile" component={Profile} />
