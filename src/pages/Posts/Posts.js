@@ -7,6 +7,7 @@ import Grid from '@material-ui/core/Grid';
 import PostCard from '../Post/components/PostCard'
 import Article from '../../components/Article'
 import NavBar from '../Home/components/NavBar'
+import PostCardUser from  '../../components/PostCardUser'
 const useStyles = makeStyles(theme => ({
     root: {
         flexGrow: 1,
@@ -30,8 +31,7 @@ const Posts = () => {
                     <SideBar />
                 </Grid>
                 <Grid item xs={6}>
-                    <PostCard />
-                    <PostCard />
+                        <PostCardUser />
                 </Grid>
                 <Grid item xs={3}>
                     <Article/>
