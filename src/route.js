@@ -11,7 +11,7 @@ import Inscription from './pages/Inscription';
 
 function Routee() {
   return (
-      <div>
+      
         <Router>
           <Switch>
 
@@ -30,7 +30,7 @@ function Routee() {
           </Switch>
         </Router>
         
-      </div>
+      
   );
 }
 

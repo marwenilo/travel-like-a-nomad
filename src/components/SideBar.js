@@ -62,7 +62,7 @@ const SideBar = () => {
           classes={{
             paper: classes.drawerPaper,
           }}
-          anchor="left"
+        //   anchor="left"
         >
             <div  className={classes.toolbar}/>
           
