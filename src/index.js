@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+
+import Route from "./route"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 
@@ -8,6 +9,6 @@ import './index.css';
 
 ReactDOM.render(
 <React.Fragment>
-  <App />
+<Route />
 </React.Fragment> 
   , document.getElementById('root'));

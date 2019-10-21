@@ -12,11 +12,11 @@ import Inscription from './pages/Inscription';
 
 function Routee() {
   return (
-      <div>
+      
         <Router>
           <Switch>
 
-            <Route exact path="/" component={Home} />
+            <Route exact path="/Home" component={Home} />
             <Route exact path="/posts" component={Posts} />
             <Route exact path="/post" component={Post} />
             <Route exact path="/profile" component={Profile} />
@@ -26,7 +26,7 @@ function Routee() {
           </Switch>
         </Router>
         
-      </div>
+      
   );
 }
 

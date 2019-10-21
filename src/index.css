@@ -7,14 +7,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
+
 .image-flag{
   height: 30px;
   width: 30px;
 }
 .aaa{
   background-color: blue !important;
+}
+
+section{
+  padding:20px 30px;
 }
