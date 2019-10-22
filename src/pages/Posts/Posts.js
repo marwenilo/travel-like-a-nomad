@@ -8,20 +8,20 @@ import PostCard from '../Post/components/PostCard'
 import Article from '../../components/Article'
 import NavBar from '../Home/components/NavBar'
 import PostCardUser from  '../../components/PostCardUser'
-const useStyles = makeStyles(theme => ({
-    root: {
-        flexGrow: 1,
-    },
+// const useStyles = makeStyles(theme => ({
+//     root: {
+//         flexGrow: 1,
+//     },
 
-}));
+// }));
 
 
 
 
 const Posts = () => {
-    const classes = useStyles();
+    // const classes = useStyles();
     return (
-        <div className={classes.root}>
+        <div >
             <Grid container spacing={6}>
                 <Grid item xs={12}>
                     <NavBar></NavBar>
