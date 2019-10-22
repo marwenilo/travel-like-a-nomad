@@ -10,32 +10,33 @@
 // } from './type';
 // import setAuthToken from '../utils/setAuthToken';
 
-// Load User*
+// Load User**-
 // export const loadUser = (resToken) => async dispatch => {
-//   console.log(resToken)
 //   if(resToken){
-//     setAuthToken(resToken.token);
-    
-
+//     setAuthToken(resToken.data.token);
 //   }
+//   console.log(resToken)
+  
+//   try {
+//     const res = await axios.get('/api/auth');
 
-  // try {
-  //   const res = await axios.get('/api/auth');
-
-  //   dispatch({
-  //     type: USER_LOADED,
-  //     payload: res.data
-  //   })
-  // } catch (err) {
-  //   dispatch({
-  //     type: AUTH_ERROR
+//     dispatch({
+//       type: USER_LOADED,
+//       payload: res.data
+//     })
+//   } 
+//   catch (err) {
+    // console.log(err);
+    // console.log(res.data);
+    // dispatch({
+    //   type: AUTH_ERROR
 
       // ki nlogini yssir dispatch auto lel err hedha !!!!**
 //     });
 //   }
 // };
 
-//Register User**
+//Register User**-
 // export const register = ({ name, email, password}) => async dispatch => {
 //   const config = {
 //     headers: {
@@ -66,13 +67,17 @@
 //   }
 // };
 
-//Login User**
+//Login User*
 // export const login = ( email, password) => async dispatch => {
 //   const config = {
 //     headers: {
-//       'Content-Type': 'application/json'
-//     }
-//   }; 
+//       'Content-Type': 'application/json',
+      // 'x-auth-token': 'Bearer '+ res.data.token*-*-
+  // }
+    // headers: {
+    //   'Content-Type': 'application/json'**-*
+    // }
+  // }; 
 
 //   const body = JSON.stringify({ email, password});
 //   try {
@@ -83,7 +88,7 @@
 //       payload: res.data
 //     });
 
-    // dispatch(loadUser());**
+//     dispatch(loadUser(res));
 //   } catch (err) {
 //       const errors = err.response.data.errors;
 
